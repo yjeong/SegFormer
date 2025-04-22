@@ -10,7 +10,7 @@ import math # 라벨 레벨 계산용
 # --- 설정 ---
 JSON_FILE_PATH = 'depth.json'
 ORIGINAL_IMAGE_PATH = 'image.jpg'
-OUTPUT_FIGURE_PATH = 'rotated_blended_contours_cm.png' # 새 출력 파일 이름
+OUTPUT_FIGURE_PATH = 'blended_contours.png' # 새 출력 파일 이름
 
 # 컬러맵 및 알파 블렌딩 설정
 COLORMAP = 'viridis'
@@ -27,7 +27,7 @@ RESIZE_FILTER = Image.Resampling.BILINEAR
 # --- 등고선(Contour) 설정 ---
 ADD_CONTOURS = True
 # *** 등고선 개수 200으로 설정 ***
-CONTOUR_LEVELS = 200
+CONTOUR_LEVELS = 300
 CONTOUR_COLOR = 'white'
 CONTOUR_LINEWIDTH = 0.4
 CONTOUR_ALPHA = 0.6
@@ -35,7 +35,7 @@ CONTOUR_ALPHA = 0.6
 # --- 등고선 라벨 설정 (cm 단위 기준) ---
 ADD_CONTOUR_LABELS = True
 # 라벨 표시할 간격 (cm) - 동적 계산 시 사용
-CONTOUR_LABEL_STEP_CM = 5 # 예: 50cm 마다 라벨 표시
+CONTOUR_LABEL_STEP_CM = 20 # 예: 50cm 마다 라벨 표시
 # 라벨 형식 (소수점 없이 cm 단위 표시)
 CONTOUR_LABEL_FMT = lambda x: f'{int(x)}cm' # 또는 '%.0f cm'
 CONTOUR_LABEL_FONTSIZE = 10
