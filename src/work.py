@@ -34,8 +34,6 @@ CONTOUR_ALPHA = 0.6
 ADD_CONTOUR_LABELS = True
 # *** 라벨 표시 간격 설정 (예: 20개 등고선마다 라벨 1개) ***
 CONTOUR_LABEL_INTERVAL = 5
-# 라벨 표시할 특정 깊이 값 리스트는 이제 사용 안 함
-# CONTOUR_LABEL_LEVELS = [100, 150, 200, 250, 300, 350, 400]
 
 CONTOUR_LABEL_FMT = lambda x: f'{int(x)}cm' # cm 단위 포맷
 CONTOUR_LABEL_FONTSIZE = 10
